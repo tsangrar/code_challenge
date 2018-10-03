@@ -91,7 +91,7 @@ function createProducts(j, product_details) {
 function addcart(cart_p_name, cart_p_id) {
 	cartproduct = '<div class="product_cart">';
 	cartproduct += '<span class="product_cart_name">' + cart_p_name + '</span>';
-	cartproduct += '<button type="button" class="btn cart_remove" id="' + cart_p_id + '">Remove</button>';
+	cartproduct += '<button type="button" class="btn cart_remove" id="' + cart_p_id + '"><span class="mobile_hide">Remove</span><span class="mobile_show remove_text">X</span></button>';
 	cartproduct += '</div>';
 	$(".cart").append(cartproduct);
 
